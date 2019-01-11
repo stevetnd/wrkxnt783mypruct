@@ -38,7 +38,7 @@
   <div class="container">
     <div class="row featurette">
       <div class="col-md-7">
-        <form>
+        <form action="https://hooks.zapier.com/hooks/catch/1391192/0l6qof/">
           <h2 class="featurette-heading">Buyer Information</h2>
           <p class="lead">
             * First Name: <br/>
@@ -53,7 +53,7 @@
             <input type="text" name="address"><br/>
             * City: <br/>
             <input type="text" name="city"><br/>
-            * State<br/>
+            * State: <br/>
             <select name="state">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -446,9 +446,9 @@
           </p>
           <h2 class="featurette-heading">Buyer Employment</h2>
           <p class="lead">
-            * Name of employer:<br/>
+            * Name of employer: <br/>
             <input type="text" name="buyer_employer"><br/>
-            * Position or title:<br/>
+            * Position or title: <br/>
             <input type="text" name="buyer_position"><br/>
             * Years on job: <br/>
             <select name="years_on_job">
@@ -464,9 +464,9 @@
           </p>
           <h2 class="featurette-heading">Co-Buyer Employment</h2>
           <p class="lead">
-            Name of employer:<br/>
+            Name of employer: <br/>
             <input type="text" name="co_employer"><br/>
-            Position or title:<br/>
+            Position or title: <br/>
             <input type="text" name="co_position"><br/>
             Years in profession: <br/>
             <select name="years_in_profession">
@@ -537,13 +537,13 @@
               <option value="WY">Wyoming</option>
             </select>
             <br/>
-            * Are you a military veteran with VA eligibility?
+            * Are you a military veteran with VA eligibility?: 
             <select name="military_vet">
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
             <br/>
-            * In what city or area would you like to purchase?:<br/>
+            * In what city or area would you like to purchase?: <br/>
             <input type="text" name="purchase_area"><br/>
             * What price range home are you looking for?: <br/>
             <select name="price_range">
@@ -554,9 +554,9 @@
               <option value="5">$1,000,000+</option>
             </select>
             <br/>
-            * Maximum monthly house payment desired?:<br/>
+            * Maximum monthly house payment desired?: <br/>
             <input type="text" name="monthly_desired_pay"><br/>
-            * How much do you have saved for a down payment?:<br/>
+            * How much do you have saved for a down payment?: <br/>
             <input type="text" name="down_payment_savings"><br/>
             * How much would you rate your credit?:
             <select name="credit_score">
@@ -577,12 +577,15 @@
             <br/>
             Questions or comments:
             <textarea name="comments" rows="8" cols="50"></textarea>
+            <!-- EDIT -->
+            <input type="hidden" value="25292 - Cheri Aumond-McLean - Cheri@teachernextdoor.us" name="REFERRING CONTACT">
+            <!-- END -->
           </p>
-          <a href="#" class="btn btn-primary my-2">Submit</a>
+          <input type="submit" class="btn btn-primary my-2" value="Submit">
         </form>
       </div>
       <div class="col-md-5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Clipboard_Silhouette_R.svg" width="400px" height="400px">
+        <img src="clipboard.svg" width="400px" height="400px">
       </div>
     </div>
 
@@ -594,7 +597,8 @@
     <p>Teacher Next Door &reg; &middot; 800-989-3550 &middot; info@TeacherNextDoor.us</p>
   </footer>
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="bootstrap.bundle.min.js"></script></body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="bootstrap.bundle.min.js"></script>
+  </body>
 </html>
 >
