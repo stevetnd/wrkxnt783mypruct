@@ -49,19 +49,19 @@
           <h2 class="featurette-heading">Buyer Information</h2>
           <p class="lead">
             * First Name: <br/>
-            <input type="text" name="first_name"><br/>
+            <input type="text" name="first_name" required><br/>
             * Last Name: <br/>
-            <input type="text" name="last_name"><br/>
+            <input type="text" name="last_name" required><br/>
             * E-mail: <br/>
-            <input type="text" name="email"><br/>
+            <input type="email" name="email" required><br/>
             * Phone: <br/>
-            <input type="text" style="width:20%;" maxlength="3" name="phone1"> - <input type="text" style="width:20%;" maxlength="3" name="phone2"> - <input type="text" style="width:20%;" maxlength="4" name="phone3"><br/>
+            <input type="text" style="width:20%;" maxlength="3" name="phone1"> - <input type="text" style="width:20%;" maxlength="3" name="phone2"> - <input type="text" style="width:20%;" maxlength="4" name="phone3" required><br/>
             * Address 1: <br/>
-            <input type="text" name="address"><br/>
+            <input type="text" name="address" required><br/>
             * City: <br/>
-            <input type="text" name="city"><br/>
+            <input type="text" name="city" required><br/>
             * State: <br/>
-            <select name="state">
+            <select name="state" required>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -116,7 +116,7 @@
             </select>
             <br/>
             * Zip: <br/>
-            <input type="text" name="zip"><br/>
+            <input type="text" name="zip" required><br/>
             * Date of birth: <br/>
             <select name="birth_month" style="width:20%;">
               <option value="JAN">JAN</option>
@@ -270,7 +270,7 @@
             </select>
             <br/>
             * Will you have a spouse or other co-applicant?: <br/>
-            <select name="spouse">
+            <select name="spouse" required>
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
@@ -431,22 +431,22 @@
             </select>
             <br/>
             * Do you currently rent or own?: <br/>
-            <select name="currently_renting">
+            <select name="currently_renting" required>
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
             <br/>
             * Current monthly payment?<br/>
-            <input type="text" name="monthly_payment"><br/>
+            <input type="text" name="monthly_payment" required><br/>
 
             * Have you owned a home in the last three years?: <br/>
-            <select name="owned_recently">
+            <select name="owned_recently" required>
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
             <br/>
             * Are you a first time home buyer?: <br/>
-            <select name="first_time">
+            <select name="first_time" required>
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
@@ -454,9 +454,9 @@
           <h2 class="featurette-heading">Buyer Employment</h2>
           <p class="lead">
             * Name of employer: <br/>
-            <input type="text" name="buyer_employer"><br/>
+            <input type="text" name="buyer_employer" required><br/>
             * Position or title: <br/>
-            <input type="text" name="buyer_position"><br/>
+            <input type="text" name="buyer_position" required><br/>
             * Years on job: <br/>
             <select name="years_on_job">
               <option value="0">0</option>
@@ -545,15 +545,15 @@
             </select>
             <br/>
             * Are you a military veteran with VA eligibility?: 
-            <select name="military_vet">
+            <select name="military_vet" required>
               <option value="YES">YES</option>
               <option value="NO">NO</option>
             </select>
             <br/>
             * In what city or area would you like to purchase?: <br/>
-            <input type="text" name="purchase_area"><br/>
+            <input type="text" name="purchase_area" required><br/>
             * What price range home are you looking for?: <br/>
-            <select name="price_range">
+            <select name="price_range" required>
               <option value="< $100,000">< $100,000</option>
               <option value="$100,000 - $300,000">$100,000 - $300,000</option>
               <option value="$300,000 - $500,000">$300,000 - $500,000</option>
@@ -562,9 +562,9 @@
             </select>
             <br/>
             * Maximum monthly house payment desired?: <br/>
-            <input type="text" name="monthly_desired_pay"><br/>
+            <input type="text" name="monthly_desired_pay" required><br/>
             * How much do you have saved for a down payment?: <br/>
-            <input type="text" name="down_payment_savings"><br/>
+            <input type="text" name="down_payment_savings" required><br/>
             * How much would you rate your credit?:
             <select name="credit_score">
               <option value="Needs work (< 600)">Needs work (< 600)</option>
