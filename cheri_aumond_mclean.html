@@ -1,11 +1,1594 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <title>Teacher Next Door</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
 
+    <!-------------------- JotForm -------------------->
+    <script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.13713" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.13713" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.13713" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.13713" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.13713"></script>
+    <script type="text/javascript">
+      JotForm.setConditions([{
+        "action": [{
+          "id": "action_1569360065970",
+          "visibility": "Show",
+          "isError": false,
+          "field": "83"
+        }, {
+          "id": "action_1569360051811",
+          "visibility": "Show",
+          "isError": false,
+          "field": "82"
+        }, {
+          "id": "action_1569360044827",
+          "visibility": "Show",
+          "isError": false,
+          "field": "86"
+        }, {
+          "id": "action_1569360036019",
+          "visibility": "Show",
+          "isError": false,
+          "field": "85"
+        }, {
+          "id": "action_1569360011155",
+          "visibility": "Show",
+          "isError": false,
+          "field": "84"
+        }, {
+          "id": "action_0_1569360008974",
+          "visibility": "Show",
+          "isError": false,
+          "field": "70"
+        }],
+        "id": "1569359053782",
+        "index": "2",
+        "link": "Any",
+        "priority": "2",
+        "terms": [{
+          "id": "term_0_1569360008974",
+          "field": "68",
+          "operator": "equals",
+          "value": "YES",
+          "isError": false
+        }],
+        "type": "field"
+      }]);
+
+      JotForm.init(function () {
+        JotForm.setPhoneMaskingValidator('input_66_full', '(###) #######');
+        // setTimeout(function () {$('input_87').hint('ex: 23');}, 20);
+        // setTimeout(function () {$('input_88').hint('ex: 23');}, 20);
+        // setTimeout(function () {$('input_82').hint('ex: 23');}, 20);
+        // setTimeout(function () {$('input_83').hint('ex: 23');}, 20);
+        JotForm.alterTexts(undefined);
+        JotForm.alterTexts({
+          "couponApply": "Apply",
+          "couponBlank": "Please enter a coupon.",
+          "couponChange": "",
+          "couponEnter": "Enter coupon",
+          "couponExpired": "Coupon is expired. Please try another one.",
+          "couponInvalid": "Coupon is invalid.",
+          "couponValid": "Coupon is valid.",
+          "shippingShipping": "Shipping",
+          "taxTax": "Tax",
+          "totalSubtotal": "Subtotal",
+          "totalTotal": "Total"
+        }, true);
+        JotForm.clearFieldOnHide = "disable";
+        FormTranslation.init({
+          "detectUserLanguage": "1",
+          "firstPageOnly": "0",
+          "options": "English (US)",
+          "originalLanguage": "en",
+          "primaryLanguage": "en",
+          "saveUserLanguage": "1",
+          "showStatus": "flag-with-nation",
+          "theme": "light-theme",
+          "version": "2"
+        });
+        JotForm.submitError = "jumpToFirstError"; /*INIT-END*/
+      });
+
+      JotForm.prepareCalculationsOnTheFly([null, null, null, {
+        "description": "",
+        "name": "typeA",
+        "qid": "3",
+        "subLabel": "",
+        "text": "Email:",
+        "type": "control_textbox"
+      }, null, null, null, null, null, null, null, null, null, null, null, {
+        "name": "submit",
+        "qid": "15",
+        "text": "Submit",
+        "type": "control_button"
+      }, null, null, null, null, {
+        "name": "pageBreak",
+        "qid": "20",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, null, {
+        "name": "pageBreak22",
+        "qid": "22",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, null, null, null, null, {
+        "name": "pageBreak27",
+        "qid": "27",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, null, null, {
+        "name": "pageBreak30",
+        "qid": "30",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, {
+        "name": "pageBreak51",
+        "qid": "51",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, null, null, null, {
+        "description": "",
+        "name": "questionsOr",
+        "qid": "55",
+        "subLabel": "",
+        "text": "Questions or comments",
+        "type": "control_textarea"
+      }, null, {
+        "description": "",
+        "name": "referringRealtor",
+        "qid": "57",
+        "subLabel": "",
+        "text": "Referring Realtor? (or type \"NONE\")",
+        "type": "control_textbox"
+      }, null, null, {
+        "description": "",
+        "labelText": "",
+        "name": "image",
+        "qid": "60",
+        "text": "start.5d8573690be293.52499647",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "image61",
+        "qid": "61",
+        "text": "444.5d856aaa552811.11453963",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "image62",
+        "qid": "62",
+        "text": "15.5d85737db17365.30929382",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "image63",
+        "qid": "63",
+        "text": "50.5d857389d918c0.74614176",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "image64",
+        "qid": "64",
+        "text": "65.5d857393c8b4a6.46004173",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "image65",
+        "qid": "65",
+        "text": "75.5d85739e062d80.73868755",
+        "type": "control_image"
+      }, {
+        "description": "",
+        "name": "phoneNumber",
+        "qid": "66",
+        "text": "Phone Number",
+        "type": "control_phone"
+      }, {
+        "description": "",
+        "name": "address",
+        "qid": "67",
+        "text": "Address",
+        "type": "control_address"
+      }, {
+        "description": "",
+        "name": "willYou",
+        "qid": "68",
+        "subLabel": "",
+        "text": "Will you have a spouse or co-buyer?",
+        "type": "control_dropdown"
+      }, {"description": "", "name": "name", "qid": "69", "text": "Name", "type": "control_fullname"}, {
+        "description": "",
+        "name": "coBuyers",
+        "qid": "70",
+        "text": "Co Buyer's Name",
+        "type": "control_fullname"
+      }, {
+        "description": "",
+        "name": "doYou71",
+        "qid": "71",
+        "text": "Do you currently rent or own?",
+        "type": "control_radio"
+      }, {
+        "description": "",
+        "name": "currentMonthly",
+        "qid": "72",
+        "subLabel": "",
+        "text": "Current monthly housing payment",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "haveYou73",
+        "qid": "73",
+        "text": "Have you owned a home in the last 3 years?",
+        "type": "control_radio"
+      }, {
+        "description": "",
+        "name": "inWhat74",
+        "qid": "74",
+        "subLabel": "City",
+        "text": "In what city will the property be located?",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "inWhat75",
+        "qid": "75",
+        "text": "In what state will the property be located?",
+        "type": "control_address"
+      }, {
+        "description": "",
+        "name": "timeframe",
+        "qid": "76",
+        "subLabel": "",
+        "text": "Timeframe",
+        "type": "control_dropdown"
+      }, {
+        "description": "",
+        "name": "estimatedPurchase",
+        "qid": "77",
+        "subLabel": "",
+        "text": "Estimated purchase Price",
+        "type": "control_dropdown"
+      }, {
+        "description": "",
+        "name": "housePayment",
+        "qid": "78",
+        "subLabel": "",
+        "text": "House Payment desired",
+        "type": "control_dropdown"
+      }, {"name": "buyerEmployment", "qid": "79", "text": "Buyer Employment", "type": "control_head"}, {
+        "description": "",
+        "name": "nameOf80",
+        "qid": "80",
+        "subLabel": "",
+        "text": "Name of Employer",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "positionOr",
+        "qid": "81",
+        "subLabel": "",
+        "text": "Position or Title",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "yearsOn",
+        "qid": "82",
+        "subLabel": "",
+        "text": "Years on Job",
+        "type": "control_number"
+      }, {
+        "description": "",
+        "name": "yearsIn83",
+        "qid": "83",
+        "subLabel": "",
+        "text": "Years in Profession",
+        "type": "control_number"
+      }, {
+        "name": "cobuyerEmployment",
+        "qid": "84",
+        "text": "Co-buyer Employment",
+        "type": "control_head"
+      }, {
+        "description": "",
+        "name": "nameOf85",
+        "qid": "85",
+        "subLabel": "",
+        "text": "Name of Employer",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "positionOr86",
+        "qid": "86",
+        "subLabel": "",
+        "text": "Position or Title",
+        "type": "control_textbox"
+      }, {
+        "description": "",
+        "name": "yearsOn87",
+        "qid": "87",
+        "subLabel": "",
+        "text": "Years on Job",
+        "type": "control_number"
+      }, {
+        "description": "",
+        "name": "yearsIn88",
+        "qid": "88",
+        "subLabel": "",
+        "text": "Years in Profession",
+        "type": "control_number"
+      }, {"name": "finalStep", "qid": "89", "text": "Final Step", "type": "control_head"}, {
+        "description": "",
+        "name": "areYou",
+        "qid": "90",
+        "text": "Are you a veteran with VA eligibility?",
+        "type": "control_radio"
+      }, {
+        "description": "",
+        "name": "howWould",
+        "qid": "91",
+        "text": "How would you rate your credit?",
+        "type": "control_radio"
+      }, {
+        "description": "",
+        "name": "howMuch",
+        "qid": "92",
+        "subLabel": "",
+        "text": "How much is currently set aside for down payment?",
+        "type": "control_dropdown"
+      }, {
+        "description": "",
+        "labelText": "",
+        "name": "teachernextdoorheader5d8bdd1cdf7e6158219670",
+        "qid": "93",
+        "text": "TeacherNextDoorHeader.5d8bdd1cdf7e61.58219670",
+        "type": "control_image"
+      }, {"name": "pageBreak94", "qid": "94", "text": "Page Break", "type": "control_pagebreak"}, {
+        "name": "pageBreak95",
+        "qid": "95",
+        "text": "Page Break",
+        "type": "control_pagebreak"
+      }, {
+        "description": "",
+        "name": "profession",
+        "qid": "96",
+        "subLabel": "",
+        "text": "Profession",
+        "type": "control_dropdown"
+      }, {
+        "description": "",
+        "name": "realtor",
+        "qid": "97",
+        "subLabel": "",
+        "text": "",
+        "type": "control_textbox"
+      }]);
+      setTimeout(function () {
+        JotForm.paymentExtrasOnTheFly([null, null, null, {
+          "description": "",
+          "name": "typeA",
+          "qid": "3",
+          "subLabel": "",
+          "text": "Email:",
+          "type": "control_textbox"
+        }, null, null, null, null, null, null, null, null, null, null, null, {
+          "name": "submit",
+          "qid": "15",
+          "text": "Submit",
+          "type": "control_button"
+        }, null, null, null, null, {
+          "name": "pageBreak",
+          "qid": "20",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, null, {
+          "name": "pageBreak22",
+          "qid": "22",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, null, null, null, null, {
+          "name": "pageBreak27",
+          "qid": "27",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, null, null, {
+          "name": "pageBreak30",
+          "qid": "30",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, {
+          "name": "pageBreak51",
+          "qid": "51",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, null, null, null, {
+          "description": "",
+          "name": "questionsOr",
+          "qid": "55",
+          "subLabel": "",
+          "text": "Questions or comments",
+          "type": "control_textarea"
+        }, null, {
+          "description": "",
+          "name": "referringRealtor",
+          "qid": "57",
+          "subLabel": "",
+          "text": "Referring Realtor? (or type \"NONE\")",
+          "type": "control_textbox"
+        }, null, null, {
+          "description": "",
+          "labelText": "",
+          "name": "image",
+          "qid": "60",
+          "text": "start.5d8573690be293.52499647",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "image61",
+          "qid": "61",
+          "text": "444.5d856aaa552811.11453963",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "image62",
+          "qid": "62",
+          "text": "15.5d85737db17365.30929382",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "image63",
+          "qid": "63",
+          "text": "50.5d857389d918c0.74614176",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "image64",
+          "qid": "64",
+          "text": "65.5d857393c8b4a6.46004173",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "image65",
+          "qid": "65",
+          "text": "75.5d85739e062d80.73868755",
+          "type": "control_image"
+        }, {
+          "description": "",
+          "name": "phoneNumber",
+          "qid": "66",
+          "text": "Phone Number",
+          "type": "control_phone"
+        }, {
+          "description": "",
+          "name": "address",
+          "qid": "67",
+          "text": "Address",
+          "type": "control_address"
+        }, {
+          "description": "",
+          "name": "willYou",
+          "qid": "68",
+          "subLabel": "",
+          "text": "Will you have a spouse or co-buyer?",
+          "type": "control_dropdown"
+        }, {"description": "", "name": "name", "qid": "69", "text": "Name", "type": "control_fullname"}, {
+          "description": "",
+          "name": "coBuyers",
+          "qid": "70",
+          "text": "Co Buyer's Name",
+          "type": "control_fullname"
+        }, {
+          "description": "",
+          "name": "doYou71",
+          "qid": "71",
+          "text": "Do you currently rent or own?",
+          "type": "control_radio"
+        }, {
+          "description": "",
+          "name": "currentMonthly",
+          "qid": "72",
+          "subLabel": "",
+          "text": "Current monthly housing payment",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "haveYou73",
+          "qid": "73",
+          "text": "Have you owned a home in the last 3 years?",
+          "type": "control_radio"
+        }, {
+          "description": "",
+          "name": "inWhat74",
+          "qid": "74",
+          "subLabel": "City",
+          "text": "In what city will the property be located?",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "inWhat75",
+          "qid": "75",
+          "text": "In what state will the property be located?",
+          "type": "control_address"
+        }, {
+          "description": "",
+          "name": "timeframe",
+          "qid": "76",
+          "subLabel": "",
+          "text": "Timeframe",
+          "type": "control_dropdown"
+        }, {
+          "description": "",
+          "name": "estimatedPurchase",
+          "qid": "77",
+          "subLabel": "",
+          "text": "Estimated purchase Price",
+          "type": "control_dropdown"
+        }, {
+          "description": "",
+          "name": "housePayment",
+          "qid": "78",
+          "subLabel": "",
+          "text": "House Payment desired",
+          "type": "control_dropdown"
+        }, {"name": "buyerEmployment", "qid": "79", "text": "Buyer Employment", "type": "control_head"}, {
+          "description": "",
+          "name": "nameOf80",
+          "qid": "80",
+          "subLabel": "",
+          "text": "Name of Employer",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "positionOr",
+          "qid": "81",
+          "subLabel": "",
+          "text": "Position or Title",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "yearsOn",
+          "qid": "82",
+          "subLabel": "",
+          "text": "Years on Job",
+          "type": "control_number"
+        }, {
+          "description": "",
+          "name": "yearsIn83",
+          "qid": "83",
+          "subLabel": "",
+          "text": "Years in Profession",
+          "type": "control_number"
+        }, {
+          "name": "cobuyerEmployment",
+          "qid": "84",
+          "text": "Co-buyer Employment",
+          "type": "control_head"
+        }, {
+          "description": "",
+          "name": "nameOf85",
+          "qid": "85",
+          "subLabel": "",
+          "text": "Name of Employer",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "positionOr86",
+          "qid": "86",
+          "subLabel": "",
+          "text": "Position or Title",
+          "type": "control_textbox"
+        }, {
+          "description": "",
+          "name": "yearsOn87",
+          "qid": "87",
+          "subLabel": "",
+          "text": "Years on Job",
+          "type": "control_number"
+        }, {
+          "description": "",
+          "name": "yearsIn88",
+          "qid": "88",
+          "subLabel": "",
+          "text": "Years in Profession",
+          "type": "control_number"
+        }, {"name": "finalStep", "qid": "89", "text": "Final Step", "type": "control_head"}, {
+          "description": "",
+          "name": "areYou",
+          "qid": "90",
+          "text": "Are you a veteran with VA eligibility?",
+          "type": "control_radio"
+        }, {
+          "description": "",
+          "name": "howWould",
+          "qid": "91",
+          "text": "How would you rate your credit?",
+          "type": "control_radio"
+        }, {
+          "description": "",
+          "name": "howMuch",
+          "qid": "92",
+          "subLabel": "",
+          "text": "How much is currently set aside for down payment?",
+          "type": "control_dropdown"
+        }, {
+          "description": "",
+          "labelText": "",
+          "name": "teachernextdoorheader5d8bdd1cdf7e6158219670",
+          "qid": "93",
+          "text": "TeacherNextDoorHeader.5d8bdd1cdf7e61.58219670",
+          "type": "control_image"
+        }, {"name": "pageBreak94", "qid": "94", "text": "Page Break", "type": "control_pagebreak"}, {
+          "name": "pageBreak95",
+          "qid": "95",
+          "text": "Page Break",
+          "type": "control_pagebreak"
+        }, {
+          "description": "",
+          "name": "profession",
+          "qid": "96",
+          "subLabel": "",
+          "text": "Profession",
+          "type": "control_dropdown"
+        }, {
+          "description": "",
+          "name": "realtor",
+          "qid": "97",
+          "subLabel": "",
+          "text": "",
+          "type": "control_textbox"
+        }]);
+      }, 20);
+    </script>
+
+    <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13713" rel="stylesheet" type="text/css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13713"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.13713" media="print"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.13713" media="all"/>
+    <style type="text/css">
+      .form-label-left {
+        width: 150px;
+      }
+
+      .form-line {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .form-label-right {
+        width: 150px;
+      }
+
+      .form-all {
+        width: 900px;
+        color: #000000 !important;
+        font-family: 'Trebuchet MS';
+        font-size: 16px;
+      }
+    </style>
+    <style type="text/css" id="form-designer-style">
+      .form-label.form-label-auto {
+        display: block;
+        float: none;
+        text-align: left;
+        width: 100%;
+      }
+
+      .form-all:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .form-all {
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .form-all {
+        width: 1301px;
+      }
+
+      .form-label-left,
+      .form-label-right {
+        width: 150px;
+      }
+
+      .form-label {
+        white-space: normal;
+      }
+
+      .form-label-left {
+        display: inline-block;
+        white-space: normal;
+        float: left;
+        text-align: left;
+      }
+
+      .form-label-right {
+        display: inline-block;
+        white-space: normal;
+        float: left;
+        text-align: right;
+      }
+
+      .form-label-top {
+        white-space: normal;
+        display: block;
+        float: none;
+        text-align: left;
+      }
+
+      .form-radio-item label:before {
+        top: 0;
+      }
+
+      .form-all {
+        font-size: 16px;
+      }
+
+      .form-label {
+        font-weight: bold;
+      }
+
+      .form-checkbox-item label,
+      .form-radio-item label {
+        font-weight: normal;
+      }
+
+      .supernova {
+        background-color: #ffffff;
+      }
+
+      .supernova body {
+        background-color: transparent;
+      }
+
+      /*
+      @width30: (unit(@formWidth, px) + 60px);
+      @width60: (unit(@formWidth, px)+ 120px);
+      @width90: (unit(@formWidth, px)+ 180px);
+      */
+      /* | */
+      @media screen and (min-width: 480px) {
+        .supernova .form-all {
+          border: 1px solid #e6e6e6;
+          -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      /* | */
+      /* | */
+      @media screen and (max-width: 480px) {
+        .jotform-form .form-all {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      /* | */
+      /* | */
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+        .jotform-form .form-all {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      /* | */
+      /* | */
+      @media screen and (min-width: 480px) and (max-width: 1300px) {
+        .jotform-form .form-all {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      /* | */
+      /* | */
+      @media screen and (min-width: 768px) {
+        .jotform-form {
+          padding: 60px 0;
+        }
+      }
+
+      /* | */
+      /* | */
+      @media screen and (max-width: 1300px) {
+        .jotform-form .form-all {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      /* | */
+      .supernova .form-all,
+      .form-all {
+        background-color: #ffffff;
+        border: 1px solid transparent;
+      }
+
+      .form-header-group {
+        border-color: #e6e6e6;
+      }
+
+      .form-matrix-table tr {
+        border-color: #e6e6e6;
+      }
+
+      .form-matrix-table tr:nth-child(2n) {
+        background-color: #f2f2f2;
+      }
+
+      .form-all {
+        color: #000000;
+      }
+
+      .form-header-group .form-header {
+        color: #000000;
+      }
+
+      .form-header-group .form-subHeader {
+        color: #1a1a1a;
+      }
+
+      .form-sub-label {
+        color: #1a1a1a;
+      }
+
+      .form-label-top,
+      .form-label-left,
+      .form-label-right,
+      .form-html {
+        color: #000000;
+      }
+
+      .form-checkbox-item label,
+      .form-radio-item label {
+        color: #1a1a1a;
+      }
+
+      .form-line.form-line-active {
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -ms-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -ms-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function: ease;
+        -ms-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease;
+        background-color: #ffffe0;
+      }
+
+      /* omer */
+      .form-radio-item,
+      .form-checkbox-item {
+        padding-bottom: 0px !important;
+      }
+
+      .form-radio-item:last-child,
+      .form-checkbox-item:last-child {
+        padding-bottom: 0;
+      }
+
+      /* omer */
+      .form-single-column .form-checkbox-item,
+      .form-single-column .form-radio-item {
+        width: 100%;
+      }
+
+      .form-checkbox-item .editor-container div,
+      .form-radio-item .editor-container div {
+        position: relative;
+      }
+
+      .form-checkbox-item .editor-container div:before,
+      .form-radio-item .editor-container div:before {
+        display: inline-block;
+        vertical-align: middle;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        left: 0;
+        width: 18px;
+        height: 18px;
+      }
+
+      .supernova {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: auto;
+        background-size: cover;
+      }
+
+      .supernova {
+        background-image: none;
+      }
+
+      #stage {
+        background-image: none;
+      }
+
+      /* | */
+      .form-all {
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+
+      .form-header-group {
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+
+      .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      .form-line {
+        padding: 12px 36px;
+      }
+
+      .form-all {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+      }
+
+      .form-section:first-child {
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .form-section:last-child {
+        -webkit-border-radius: 0 0 20px 20px;
+        -moz-border-radius: 0 0 20px 20px;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .form-all .qq-upload-button,
+      .form-all .form-submit-button,
+      .form-all .form-submit-reset,
+      .form-all .form-submit-print {
+        font-size: 1em;
+        padding: 9px 15px;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .form-all .form-pagebreak-back,
+      .form-all .form-pagebreak-next {
+        font-size: 1em;
+        padding: 9px 15px;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      /*
+      & when ( @buttonFontType = google ) { @import (css) "@{buttonFontLink}";
+      }
+      */
+      h2.form-header {
+        line-height: 1.618em;
+        font-size: 1.714em;
+      }
+
+      h2 ~ .form-subHeader {
+        line-height: 1.5em;
+        font-size: 1.071em;
+      }
+
+      .form-header-group {
+        text-align: left;
+      }
+
+      /*.form-dropdown,
+      .form-radio-item,
+      .form-checkbox-item,
+      .form-radio-other-input,
+      .form-checkbox-other-input,*/
+      .form-captcha input,
+      .form-spinner input,
+      .form-error-message {
+        padding: 4px 3px 2px 3px;
+      }
+
+      .form-header-group {
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .form-section {
+        padding: 0px 0px 0px 0px;
+      }
+
+      .form-header-group {
+        margin: 12px 36px 12px 36px;
+      }
+
+      .form-header-group {
+        padding: 24px 0px 24px 0px;
+      }
+
+      .form-textbox,
+      .form-textarea {
+        padding: 4px 3px 2px 3px;
+      }
+
+      .form-textbox,
+      .form-textarea,
+      .form-radio-other-input,
+      .form-checkbox-other-input,
+      .form-captcha input,
+      .form-spinner input {
+        background-color: #ffffff;
+      }
+
+      [data-type="control_dropdown"] .form-input,
+      [data-type="control_dropdown"] .form-input-wide {
+        width: 150px;
+      }
+
+      .form-label {
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      li[data-type="control_image"] div {
+        text-align: left;
+      }
+
+      li[data-type="control_image"] img {
+        border: none;
+        border-width: 0px !important;
+        border-style: solid !important
+      }
+
+      .form-line-column {
+        width: auto;
+      }
+
+      .form-line-error {
+        overflow: hidden;
+        -webkit-transition-property: none;
+        -moz-transition-property: none;
+        -ms-transition-property: none;
+        -o-transition-property: none;
+        transition-property: none;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -ms-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function: ease;
+        -ms-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease;
+        background-color: #fff4f4;
+      }
+
+      .form-line-error .form-error-message {
+        background-color: #ff3200;
+        clear: both;
+        float: none;
+      }
+
+      .form-line-error .form-error-message .form-error-arrow {
+        border-bottom-color: #ff3200;
+      }
+
+      .form-line-error input:not(#coupon-input),
+      .form-line-error textarea,
+      .form-line-error .form-validation-error {
+        border: 1px solid #ff3200;
+        -webkit-box-shadow: 0 0 3px #ff3200;
+        -moz-box-shadow: 0 0 3px #ff3200;
+        box-shadow: 0 0 3px #ff3200;
+      }
+
+      .ie-8 .form-all {
+        margin-top: auto;
+        margin-top: initial;
+      }
+
+      .ie-8 .form-all:before {
+        display: none;
+      }
+
+      [data-type="control_clear"] {
+        display: none;
+      }
+
+      /* | */
+      @media screen and (max-width: 480px),
+      screen and (max-device-width: 767px) and (orientation: portrait),
+      screen and (max-device-width: 415px) and (orientation: landscape) {
+        .testOne {
+          letter-spacing: 0;
+        }
+
+        .form-all {
+          border: 0;
+          max-width: initial;
+        }
+
+        .form-sub-label-container {
+          width: 100%;
+          margin: 0;
+          margin-right: 0;
+          float: left;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        span.form-sub-label-container + span.form-sub-label-container {
+          margin-right: 0;
+        }
+
+        .form-sub-label {
+          white-space: normal;
+        }
+
+        .form-address-table td, .form-address-table th {
+          padding: 0 1px 10px;
+        }
+
+        .form-submit-button, .form-submit-print, .form-submit-reset {
+          width: 100%;
+          margin-left: 0 !important;
+        }
+
+        div[id*=at_] {
+          font-size: 14px;
+          font-weight: 700;
+          height: 8px;
+          margin-top: 6px;
+        }
+
+        .showAutoCalendar {
+          width: 20px;
+        }
+
+        img.form-image {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .form-matrix-row-headers {
+          width: 100%;
+          word-break: break-all;
+          min-width: 40px;
+        }
+
+        .form-collapse-table, .form-header-group {
+          margin: 0;
+        }
+
+        .form-collapse-table {
+          height: 100%;
+          display: inline-block;
+          width: 100%;
+        }
+
+        .form-collapse-hidden {
+          display: none !important;
+        }
+
+        .form-input {
+          width: 100%;
+        }
+
+        .form-label {
+          width: 100% !important;
+        }
+
+        .form-label-left, .form-label-right {
+          display: block;
+          float: none;
+          text-align: left;
+          width: auto !important;
+        }
+
+        .form-line, .form-line.form-line-column {
+          padding: 2% 5%;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        input[type=text], input[type=email], input[type=tel], textarea {
+          width: 100%;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          max-width: initial !important;
+        }
+
+        .form-radio-other-input, .form-checkbox-other-input {
+          max-width: 55% !important;
+        }
+
+        .form-dropdown, .form-textarea, .form-textbox {
+          width: 100% !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        .form-input, .form-input-wide, .form-textarea, .form-textbox, .form-dropdown {
+          max-width: initial !important;
+        }
+
+        .form-checkbox-item:not(#foo), .form-radio-item:not(#foo) {
+          width: 100%;
+        }
+
+        .form-address-city, .form-address-line, .form-address-postal, .form-address-state, .form-address-table,
+        .form-address-table .form-sub-label-container, .form-address-table select, .form-input {
+          width: 100%;
+        }
+
+        div.form-header-group {
+          padding: 24px 0px !important;
+          margin: 0 12px 2% !important;
+          margin-left: 5% !important;
+          margin-right: 5% !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        div.form-header-group.hasImage img {
+          max-width: 100%;
+        }
+
+        [data-type="control_button"] {
+          margin-bottom: 0 !important;
+        }
+
+        [data-type=control_fullname] .form-sub-label-container {
+          width: 48%;
+        }
+
+        [data-type=control_fullname] .form-sub-label-container:first-child {
+          margin-right: 4%;
+        }
+
+        [data-type=control_phone] .form-sub-label-container {
+          width: 65%;
+          margin-right: 0;
+          margin-left: 0;
+          float: left;
+        }
+
+        [data-type=control_phone] .form-sub-label-container:first-child {
+          width: 31%;
+          margin-right: 4%;
+        }
+
+        [data-type=control_datetime] .allowTime-container {
+          width: 100%;
+        }
+
+        [data-type=control_datetime] .form-sub-label-container:first-child {
+          width: 10% !important;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        [data-type=control_datetime] .form-sub-label-container + .form-sub-label-container {
+          width: 24% !important;
+          margin-left: 6%;
+          margin-right: 0;
+        }
+
+        [data-type=control_datetime] span + span + span > span:first-child {
+          display: block;
+          width: 100% !important;
+        }
+
+        [data-type=control_birthdate] .form-sub-label-container, [data-type=control_time] .form-sub-label-container {
+          width: 27.3% !important;
+          margin-right: 6% !important;
+        }
+
+        [data-type=control_time] .form-sub-label-container:last-child {
+          width: 33.3% !important;
+          margin-right: 0 !important;
+        }
+
+        .form-pagebreak-back-container, .form-pagebreak-next-container {
+          min-height: 1px;
+          width: 50% !important;
+        }
+
+        .form-pagebreak-back, .form-pagebreak-next, .form-product-item.hover-product-item {
+          width: 100%;
+        }
+
+        .form-pagebreak-back-container {
+          padding: 0;
+          text-align: right;
+        }
+
+        .form-pagebreak-next-container {
+          padding: 0;
+          text-align: left;
+        }
+
+        .form-pagebreak {
+          margin: 0 auto;
+        }
+
+        .form-buttons-wrapper {
+          margin: 0 !important;
+          margin-left: 0 !important;
+        }
+
+        .form-buttons-wrapper button {
+          width: 100%;
+        }
+
+        .form-buttons-wrapper .form-submit-print {
+          margin: 0 !important;
+        }
+
+        table {
+          width: 100% !important;
+          max-width: initial !important;
+        }
+
+        table td + td {
+          padding-left: 3%;
+        }
+
+        .form-checkbox-item, .form-radio-item {
+          white-space: normal !important;
+        }
+
+        .form-checkbox-item input, .form-radio-item input {
+          width: auto;
+        }
+
+        .form-collapse-table {
+          margin: 0 5%;
+          display: block;
+          zoom: 1;
+          width: auto;
+        }
+
+        .form-collapse-table:before, .form-collapse-table:after {
+          display: table;
+          content: '';
+          line-height: 0;
+        }
+
+        .form-collapse-table:after {
+          clear: both;
+        }
+
+        .fb-like-box {
+          width: 98% !important;
+        }
+
+        .form-error-message {
+          clear: both;
+          bottom: -10px;
+        }
+
+        .date-separate, .phone-separate {
+          display: none;
+        }
+
+        .custom-field-frame, .direct-embed-widgets, .signature-pad-wrapper {
+          width: 100% !important;
+        }
+      }
+
+      /* | */ /*PREFERENCES STYLE*/
+      .form-all {
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      .form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset, .form-all .form-submit-print {
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      .form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container {
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      .form-header-group {
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      .form-label {
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      .form-all {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .form-label-left, .form-label-right, .form-label-left.form-label-auto, .form-label-right.form-label-auto {
+        width: 150px;
+      }
+
+      .form-all {
+        font-size: 16px
+      }
+
+      .form-all .qq-upload-button, .form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset, .form-all .form-submit-print {
+        font-size: 16px
+      }
+
+      .form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container {
+        font-size: 16px
+      }
+
+      .supernova .form-all, .form-all {
+        background-color: #fff;
+        border: 1px solid transparent;
+      }
+
+      .form-all {
+        color: #000000;
+      }
+
+      .form-header-group .form-header {
+        color: #000000;
+      }
+
+      .form-header-group .form-subHeader {
+        color: #000000;
+      }
+
+      .form-label-top, .form-label-left, .form-label-right, .form-html, .form-checkbox-item label, .form-radio-item label {
+        color: #000000;
+      }
+
+      .form-sub-label {
+        color: #1a1a1a;
+      }
+
+      .supernova {
+        background-color: #fff;
+      }
+
+      .supernova body {
+        background: transparent;
+      }
+
+      .form-textbox, .form-textarea, .form-radio-other-input, .form-checkbox-other-input, .form-captcha input, .form-spinner input {
+        background-color: #ffffff;
+      }
+
+      .supernova {
+        background-image: none;
+      }
+
+      #stage {
+        background-image: none;
+      }
+
+      .form-all {
+        background-image: none;
+      }
+
+      .ie-8 .form-all:before {
+        display: none;
+      }
+
+      .ie-8 {
+        margin-top: auto;
+        margin-top: initial;
+      }
+
+      /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+      .form-pagebreak-next {
+        background: #006f43 !important;
+        border-color: #006f43 !important;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        width: 177px;
+        margin: 0px;
+        font-size: 15px;
+        border-radius: 0;
+        outline: none;
+        padding: 10px 40px;
+        line-height: 1.33;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        white-space: nowrap;
+      }
+
+      .form-pagebreak-back {
+        background: #006f43 !important;
+        border-color: #006f43 !important;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        width: 177px;
+        margin: 0px;
+        font-size: 15px;
+        border-radius: 0;
+        outline: none;
+        padding: 10px 40px;
+        line-height: 1.33;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        white-space: nowrap;
+      }
+
+      .form-submit-button {
+        background: #006f43 !important;
+        border-color: #006f43 !important;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        width: 177px;
+        margin: 0px;
+        font-size: 15px;
+        border-radius: 0;
+        outline: none;
+        padding: 10px 40px;
+        line-height: 1.33;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        white-space: nowrap;
+      }
+    </style>
+    <!------------------------------------------------->
+
+    <link href="bootstrap.min.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -46,158 +1629,710 @@
       }
     </style>
   </head>
+
   <body style='overflow-x:hidden'>
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <img src="cheri.png" width="200px" height="200px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+          <h1 class="jumbotron-heading">Cheri Aumond McLean</h1>
+          <p class="lead text-muted">(813) 967-1285<br/>Cheri@TeacherNextDoor.US</p>
+          <p>
+            <a href="cheri_aumond_mclean_apply.html" class="btn btn-primary my-2 btn-lg" style="padding: .8rem 1.5rem;">Apply Now</a>
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="text-left">
+          <h1>About Me</h1>
+          <p>
+            Cheri is a native of Chicago and moved to Plant City, near Tampa Bay, Florida in 1984. She began her career
+            with Teacher Next Door in 2011, first as a Realtor and Sales Associate, then as a Broker Associate. In 2018
+            Cheri became Teacher Next Door's Principal Broker.
+            <br/><br/>
+            Cheri has dedicated her career to helping others and is excited to give back to the teachers, nurses,
+            law enforcement, firefighters and others who do so much in our local communities. She posses a unique
+            understanding of their housing needs and dedicates herself to being available  to them whenever they need her.
+            Powerful communication skills, organization and negotiation skills, along with her friendly, personable
+            demeanor is what Cheri brings to every client relationship.
+          </p>
+        </div>
 
-<main role="main">
-  <section class="jumbotron text-center">
-    <div class="container">
-      <img src="cheri.png" width="200px" height="200px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
-      <h1 class="jumbotron-heading">Cheri Aumond McLean</h1>
-      <p class="lead text-muted">(813) 967-1285<br/>Cheri@TeacherNextDoor.US</p>
-      <p>
-        <a href="cheri_aumond_mclean_apply.html" class="btn btn-primary my-2 btn-lg" style="padding: .8rem 1.5rem;">Apply Now</a>
-      </p>
-    </div>
-  </section>
-  <div class="container">
-    <div class="text-left">
-      <h1>About Me</h1>
-      <p>Cheri is a native of Chicago and moved to Plant City, near Tampa Bay, Florida in 1984.  She began her career with Teacher Next Door in 2011, first as a Realtor and Sales Associate, then as a Broker Associate.  In 2018 Cheri became Teacher Next Door's Principal Broker.
-      <br/><br/>Cheri has dedicated her career to helping others and is excited to give back to the teachers, nurses, law enforcement, firefighters and others who do so much in our local communities.  She posses a unique understanding of their housing needs and dedicates herself to being available  to them whenever they need her. Powerful communication skills, organization and negotiation skills, along with her friendly, personable demeanor is what Cheri brings to every client relationship.</p>
-    </div>
-
-    <hr class="featurette-divider">
-  </div>
-  <div class="container marketing">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Accomplishments and Affiliations</h2>
-        <p class="lead">
-          <ul>
-            <li>Accredited Buyer's Representative with the National Association of Realtors</li>
-            <li>Licensed Florida Real Estate Broker</li>
-            <li>Condominium Home Owners Association President</li>
-            <li>National Association of Realtors</li>
-            <li>Florida Association of Realtors</li>
-            <li>Lakeland Association of Realtors</li>
-          </ul>
-        </p>
+        <hr class="featurette-divider">
       </div>
-      <div class="col-md-5 order-md-1">
-        <img src="award.png" width="250px">
-      </div>
-    </div>
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Accomplishments and Affiliations</h2>
+            <p class="lead">
+              <ul>
+                <li>Accredited Buyer's Representative with the National Association of Realtors</li>
+                <li>Licensed Florida Real Estate Broker</li>
+                <li>Condominium Home Owners Association President</li>
+                <li>National Association of Realtors</li>
+                <li>Florida Association of Realtors</li>
+                <li>Lakeland Association of Realtors</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="award.png" width="250px">
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Program Benefits</h2>
-        <p class="lead">
-          <ul>
-            <li>Purchase <strong>ANY</strong> home on the market</li>
-            <li><strong>GRANTS</strong> up to <strong>$4,170.00</strong> ($6,000.00 in some areas.)</li>
-            <li><strong>Down Payment Assistance</strong> up to <strong>$10,681.00</strong></li>
-            <li><strong>Home loans for teachers</strong></li>
-            <li><strong>NO</strong> application fees</li>
-            <li><strong>NO</strong> up-front fees</li>
-            <li><strong>NO</strong> Broker fees</li>
-            <li><strong>Preferred</strong> interest rates</li>
-            <li><strong>FREE</strong> appraisal (up to $545.00 credit at closing)</li>
-            <li><strong>FREE</strong> home buyer representation</li>
-            <li><strong>FREE</strong> access to (MLS) home listings</li>
-            <li><strong>FREE</strong> nationwide access to foreclosures</li>
-            <li><strong>Discount</strong> title fees</li>
-          </ul>
-        </p>
-      </div>
-      <div class="col-md-5" id="video">
-        <p class="lead">Grant information video:</p>
-        <iframe width="336" height="189" src="https://www.youtube.com/embed/3FjPsxnVTrw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-    </div>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Program Benefits</h2>
+            <p class="lead">
+              <ul>
+                <li>Purchase <strong>ANY</strong> home on the market</li>
+                <li><strong>GRANTS</strong> up to <strong>$4,170.00</strong> ($6,000.00 in some areas.)</li>
+                <li><strong>Down Payment Assistance</strong> up to <strong>$10,681.00</strong></li>
+                <li><strong>Home loans for teachers</strong></li>
+                <li><strong>NO</strong> application fees</li>
+                <li><strong>NO</strong> up-front fees</li>
+                <li><strong>NO</strong> Broker fees</li>
+                <li><strong>Preferred</strong> interest rates</li>
+                <li><strong>FREE</strong> appraisal (up to $545.00 credit at closing)</li>
+                <li><strong>FREE</strong> home buyer representation</li>
+                <li><strong>FREE</strong> access to (MLS) home listings</li>
+                <li><strong>FREE</strong> nationwide access to foreclosures</li>
+                <li><strong>Discount</strong> title fees</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5" id="video">
+            <p class="lead">Grant information video:</p>
+            <iframe width="336" height="189" src="https://www.youtube.com/embed/3FjPsxnVTrw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-    <div class="row featurette" id="details">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Who is eligible?</h2>
-        <p class="lead">
-          <ul>
-            <li>All classroom teachers</li>
-            <li>Administrators</li>
-            <li>Deans and Counselors</li>
-            <li>Office Staff</li>
-            <li>School Psychologists</li>
-            <li>School Social Workers</li>
-            <li>School Nurses</li>
-            <li>Lunchroom Staff</li>
-            <li>Para-professionals</li>
-            <li>Coaches</li>
-            <li>Custodians and Maintenance Staff</li>
-            <li>Librarians and Media Specialists</li>
-            <li>County Office Staff</li>
-          </ul>
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img src="teacher.png" width="400px" height="400px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
-      </div>
-    </div>
+        <div class="row featurette" id="details">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Who is eligible?</h2>
+            <p class="lead">
+              <ul>
+                <li>All classroom teachers</li>
+                <li>Administrators</li>
+                <li>Deans and Counselors</li>
+                <li>Office Staff</li>
+                <li>School Psychologists</li>
+                <li>School Social Workers</li>
+                <li>School Nurses</li>
+                <li>Lunchroom Staff</li>
+                <li>Para-professionals</li>
+                <li>Coaches</li>
+                <li>Custodians and Maintenance Staff</li>
+                <li>Librarians and Media Specialists</li>
+                <li>County Office Staff</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="teacher.png" width="400px" height="400px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Not a teacher or school employee?</h2>
-        <p class="lead">Teacher Next Door has approved programs, grants, down payment assistance and other benefits for many non-instructional, public service professionals, including:
-          <ul>
-            <li>Nurses and all healthcare professionals</li>
-            <li>Law Enforcement Officers and Support Staff</li>
-            <li>Firefighters, EMT's and Support Staff</li>
-            <li>Government Employees</li>
-            <li>Former and Active Duty Military</li>
-          </ul>
-        </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="nurse.png" width="400px" height="400px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
-      </div>
-    </div>
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Not a teacher or school employee?</h2>
+            <p class="lead">Teacher Next Door has approved programs, grants, down payment assistance and other benefits for many non-instructional, public service professionals, including:
+              <ul>
+                <li>Nurses and all healthcare professionals</li>
+                <li>Law Enforcement Officers and Support Staff</li>
+                <li>Firefighters, EMT's and Support Staff</li>
+                <li>Government Employees</li>
+                <li>Former and Active Duty Military</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="nurse.png" width="400px" height="400px" style="border-radius:50%; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading" id="apply">Apply Now!</h2>
-        <p class="lead">
-            I am a...<br/>
-            <select name="type">
-              <option>Teacher / School Employee</option>
-              <option>Nurse / Healthcare Employee</option>
-              <option>Law Enforcement / Support Staff</option>
-              <option>Firefighter / EMT / Support Staff</option>
-              <option>Government Employee</option>
-              <option>Military</option>
-            </select>
-            <br/>
-            Time Frame<br/>
-            <select name="time">
-              <option value="3 months">3 Months</option>
-              <option value="6 months">6 Months</option>
-              <option value="1 year">1 Year</option>
-            </select>
-            <br/>
-            <a class="btn btn-primary my-2" href="cheri_aumond_mclean_apply.html">Continue &raquo;</a>
-        </p>
+        <!-------------------- JotForm -------------------->
+        <div class="row featurette" id="jotform">
+          <div class="col-md-12">
+              <form class="jotform-form" action="https://submit.jotform.us/submit/92905425386161/" method="post" 
+                         name="form_92905425386161" id="92905425386161" accept-charset="utf-8"> 
+                <input type="hidden" name="formID" value="92905425386161"/> 
+                <input type="hidden" name="JWTContainer" id="JWTContainer" value=""/> 
+                <input type="hidden" name="cardinalOrderNumber" id="cardinalOrderNumber" value=""/> 
+                <div role="main" class="form-all">
+                    <div class="cont">
+                        <input type="text" id="input_language" name="input_language" style="display:none"/>
+                        <div class="language-dd" id="langDd" style="display:none">
+                            <div class="dd-placeholder lang-emp">Language</div>
+                            <ul class="lang-list dn" id="langList">
+                                <li data-lang="en" class="en">English (US)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="form-section page-section">
+                        <li class="form-line" data-type="control_image" id="id_93">
+                            <div id="cid_93" class="form-input-wide">
+                                <div style="text-align:center">
+                                    <img alt="" class="form-image" style="border:0"
+                                         src="https://www.jotform.com/uploads/TeacherNextDoor/form_files/TeacherNextDoorHeader.5d8bdd1cdf7e61.58219670.png"
+                                         height="152px" width="799px" data-component="image"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line" data-type="control_image" id="id_60">
+                            <div id="cid_60" class="form-input-wide">
+                                <div style="text-align:center">
+                                    <img alt="" class="form-image" style="border:0"
+                                         src="https://www.jotform.com/uploads/TeacherNextDoor/form_files/start.5d8573690be293.52499647.gif"
+                                         height="206px" width="207px" data-component="image"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line always-hidden" data-type="control_textbox" id="id_97">
+                            <label class="form-label form-label-top" id="label_97" for="input_97"> </label>
+                            <div id="cid_97" class="form-input-wide always-hidden">
+                                <input type="text" id="input_97" name="q97_realtor" data-type="input-textbox"
+                                       class="form-readonly form-textbox" size="20" value="Cheri@TeacherNextDoor.US" tabindex="-1"
+                                       data-component="textbox" aria-labelledby="label_97" readonly=""/>
+                            </div>
+                        </li>
+                        <li class="form-line jf-required" data-type="control_dropdown" id="id_96">
+                            <label class="form-label form-label-top form-label-auto" id="label_96" for="input_96">
+                                Profession <span class="form-required"> * </span>
+                            </label>
+                            <div id="cid_96" class="form-input-wide jf-required">
+                                <select class="form-dropdown validate[required]" id="input_96" name="q96_profession"
+                                        style="width:300px" data-component="dropdown" required=""
+                                        aria-labelledby="label_96">
+                                    <option value=""></option>
+                                    <option value="Teacher / School Employee" selected> Teacher / School Employee</option>
+                                    <option value="Nurse / Healthcare Employee"> Nurse / Healthcare Employee</option>
+                                    <option value="Law Enforcement / Support Staff"> Law Enforcement / Support Staff</option>
+                                    <option value="Firefighter / Support Staff"> Firefighter / Support Staff</option>
+                                    <option value="Government Employee (Local, state and Federal)"> Government Employee (Local, state and Federal)</option>
+                                    <option value="Active or Former Military (or Family)"> Active or Former Military (or Family)</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="form-line jf-required" data-type="control_fullname" id="id_69">
+                            <label class="form-label form-label-top form-label-auto" id="label_69" for="first_69">
+                                Name <span class="form-required"> * </span>
+                            </label>
+                            <div id="cid_69" class="form-input-wide jf-required">
+                                <div data-wrapper-react="true">
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="text" id="first_69" name="q69_name[first]" class="form-textbox validate[required]"
+                                               size="10" value="" data-component="first" aria-labelledby="label_69 sublabel_69_first"
+                                               required=""/>
+                                        <label class="form-sub-label" for="first_69" id="sublabel_69_first" style="min-height:13px"> First Name </label>
+                                    </span>
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="text" id="last_69" name="q69_name[last]" class="form-textbox validate[required]"
+                                               size="15" value="" data-component="last" aria-labelledby="label_69 sublabel_69_last"
+                                               required=""/>
+                                        <label class="form-sub-label" for="last_69" id="sublabel_69_last" style="min-height:13px"> Last Name </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_3">
+                              <label class="form-label form-label-top" id="label_3" for="input_3">
+                                    Email: <span class="form-required"> * </span>
+                              </label>
+                              <div id="cid_3" class="form-input-wide jf-required">
+                                  <input type="text" id="input_3" name="q3_typeA" data-type="input-textbox" class="form-textbox validate[required, Email]"
+                                         size="60" value="" data-component="textbox" aria-labelledby="label_3" required=""/>
+                              </div>
+                            </li>
+                        <li id="cid_20" class="form-input-wide" data-type="control_pagebreak">
+                              <div class="form-pagebreak" data-component="pagebreak">
+                                  <div class="form-pagebreak-next-container">
+                                      <button id="form-pagebreak-next_20" type="button" class="form-pagebreak-next" data-component="pagebreak-next" onclick="nextStep()">Next</button>
+                                  </div>
+                                  <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_20"></div>
+                              </div>
+                        </li>
+                      </ul>
+                    <ul class="form-section page-section hidden-section" style="display:none;">
+                        <li class="form-line" data-type="control_image" id="id_62"> 
+                          <div id="cid_62" class="form-input-wide">
+                              <div style="text-align:center">
+                                  <img alt="" class="form-image" style="border:0"
+                                       src="https://www.jotform.com/uploads/TeacherNextDoor/form_files/15.5d85737db17365.30929382.gif"
+                                       height="206px" width="207px" data-component="image"/>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="form-line jf-required" data-type="control_address" id="id_67"> 
+                          <label class="form-label form-label-top form-label-auto" id="label_67" for="input_67_addr_line1">
+                            Address <span class="form-required"> * </span>
+                          </label>
+                          <div id="cid_67" class="form-input-wide jf-required">
+                              <table summary="" class="form-address-table">
+                              <tbody>
+                              <tr>
+                                  <td colSpan="2">
+                                      <span class="form-sub-label-container" style="vertical-align:top">
+                                          <input type="text" id="input_67_addr_line1" name="q67_address[addr_line1]"
+                                               class="form-textbox validate[required] form-address-line"
+                                               autoComplete="address-line1" value="" data-component="address_line_1"
+                                               aria-labelledby="label_67 sublabel_67_addr_line1" required=""/>
+                                          <label class="form-sub-label" for="input_67_addr_line1" id="sublabel_67_addr_line1" style="min-height:13px">
+                                            Street Address
+                                          </label>
+                                      </span>
+                                  </td>
+                              </tr>
+                              <tr style="display:none">
+                                  <td colSpan="2">
+                                      <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="text" id="input_67_addr_line2" name="q67_address[addr_line2]"
+                                               class="form-textbox form-address-line" autoComplete="new-password" size="46"
+                                               value="" data-component="address_line_2" aria-labelledby="label_67 sublabel_67_addr_line2"
+                                               required=""/>
+                                        <label class="form-sub-label" for="input_67_addr_line2" id="sublabel_67_addr_line2" style="min-height:13px">
+                                            Street Address Line 2
+                                        </label>
+                                    </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text" id="input_67_city" name="q67_address[city]" class="form-textbox validate[required] form-address-city"
+                                           autoComplete="address-level2" size="21" value="" data-component="city"
+                                           aria-labelledby="label_67 sublabel_67_city" required=""/>
+                                    <label class="form-sub-label" for="input_67_city" id="sublabel_67_city" style="min-height:13px"> City </label>
+                                    </span>
+                                </td>
+                                <td>
+                                  <span class="form-sub-label-container" style="vertical-align:top">
+                                    <select class="form-dropdown validate[required] form-address-state" name="q67_address[state]"
+                                            id="input_67_state" data-component="state" required="" aria-labelledby="label_67 sublabel_67_state"
+                                            autoComplete="address-level1">
+                                        <option selected="" value=""> Please Select </option>
+                                        <option value="Alabama"> Alabama </option>
+                                        <option value="Alaska"> Alaska </option>
+                                        <option value="Arizona"> Arizona </option>
+                                        <option value="Arkansas"> Arkansas </option>
+                                        <option value="California"> California </option>
+                                        <option value="Colorado"> Colorado </option>
+                                        <option value="Connecticut"> Connecticut </option>
+                                        <option value="Delaware"> Delaware </option>
+                                        <option value="District of Columbia"> District of Columbia </option>
+                                        <option value="Florida"> Florida </option>
+                                        <option value="Georgia"> Georgia </option>
+                                        <option value="Hawaii"> Hawaii </option>
+                                        <option value="Idaho"> Idaho </option>
+                                        <option value="Illinois"> Illinois </option>
+                                        <option value="Indiana"> Indiana </option>
+                                        <option value="Iowa"> Iowa </option>
+                                        <option value="Kansas"> Kansas </option>
+                                        <option value="Kentucky"> Kentucky </option>
+                                        <option value="Louisiana"> Louisiana </option>
+                                        <option value="Maine"> Maine </option>
+                                        <option value="Maryland"> Maryland </option>
+                                        <option value="Massachusetts"> Massachusetts </option>
+                                        <option value="Michigan"> Michigan </option>
+                                        <option value="Minnesota"> Minnesota </option>
+                                        <option value="Mississippi"> Mississippi </option>
+                                        <option value="Missouri"> Missouri </option>
+                                        <option value="Montana"> Montana </option>
+                                        <option value="Nebraska"> Nebraska </option>
+                                        <option value="Nevada"> Nevada </option>
+                                        <option value="New Hampshire"> New Hampshire </option>
+                                        <option value="New Jersey"> New Jersey </option>
+                                        <option value="New Mexico"> New Mexico </option>
+                                        <option value="New York"> New York </option>
+                                        <option value="North Carolina"> North Carolina </option>
+                                        <option value="North Dakota"> North Dakota </option>
+                                        <option value="Ohio"> Ohio </option>
+                                        <option value="Oklahoma"> Oklahoma </option>
+                                        <option value="Oregon"> Oregon </option>
+                                        <option value="Pennsylvania"> Pennsylvania </option>
+                                        <option value="Puerto Rico"> Puerto Rico </option>
+                                        <option value="Rhode Island"> Rhode Island </option>
+                                        <option value="South Carolina"> South Carolina </option>
+                                        <option value="South Dakota"> South Dakota </option>
+                                        <option value="Tennessee"> Tennessee </option>
+                                        <option value="Texas"> Texas </option>
+                                        <option value="Utah"> Utah </option>
+                                        <option value="Vermont"> Vermont </option>
+                                        <option value="Virgin Islands"> Virgin Islands </option>
+                                        <option value="Virginia"> Virginia </option>
+                                        <option value="Washington"> Washington </option>
+                                        <option value="West Virginia"> West Virginia </option>
+                                        <option value="Wisconsin"> Wisconsin </option>
+                                        <option value="Wyoming"> Wyoming </option>
+                                    </select>
+                                    <label class="form-sub-label" for="input_67_state" id="sublabel_67_state" style="min-height:13px"> State </label>
+                                </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <span class="form-sub-label-container " style="vertical-align:top">
+                                          <input type="text" id="input_67_postal" name="q67_address[postal]" class="form-textbox validate[required] form-address-postal"
+                                                autoComplete="postal-code" size="10" value="" data-component="zip" aria-labelledby="label_67 sublabel_67_postal"
+                                                required=""/>
+                                          <label class="form-sub-label" for="input_67_postal" id="sublabel_67_postal" style="min-height:13px"> Zip Code </label>
+                                      </span>
+                                  </td>
+                                  <td style="display:none">
+                                      <span class="form-sub-label-container " style="vertical-align:top">
+                                          <select class="form-dropdown form-address-country noTranslate" name="q67_address[country]"
+                                                id="input_67_country" data-component="country" required="" aria-labelledby="label_67 sublabel_67_country"
+                                                autoComplete="new-password">
+                                            <option value=""> Please Select </option>
+                                            <option value="United States"> United States </option>
+                                            <option value="Afghanistan"> Afghanistan </option>
+                                            <option value="Albania"> Albania </option>
+                                            <option value="Algeria"> Algeria </option>
+                                            <option value="American Samoa"> American Samoa </option>
+                                            <option value="Andorra"> Andorra </option>
+                                            <option value="Angola"> Angola </option>
+                                            <option value="Anguilla"> Anguilla </option>
+                                            <option value="Antigua and Barbuda"> Antigua and Barbuda </option>
+                                            <option value="Argentina"> Argentina </option>
+                                            <option value="Armenia"> Armenia </option>
+                                            <option value="Aruba"> Aruba </option>
+                                            <option value="Australia"> Australia </option>
+                                            <option value="Austria"> Austria </option>
+                                            <option value="Azerbaijan"> Azerbaijan </option>
+                                            <option value="The Bahamas"> The Bahamas </option>
+                                            <option value="Bahrain"> Bahrain </option>
+                                            <option value="Bangladesh"> Bangladesh </option>
+                                            <option value="Barbados"> Barbados </option>
+                                            <option value="Belarus"> Belarus </option>
+                                            <option value="Belgium"> Belgium </option>
+                                            <option value="Belize"> Belize </option>
+                                            <option value="Benin"> Benin </option>
+                                            <option value="Bermuda"> Bermuda </option>
+                                            <option value="Bhutan"> Bhutan </option>
+                                            <option value="Bolivia"> Bolivia </option>
+                                            <option value="Bosnia and Herzegovina"> Bosnia and Herzegovina </option>
+                                            <option value="Botswana"> Botswana </option>
+                                            <option value="Brazil"> Brazil </option>
+                                            <option value="Brunei"> Brunei </option>
+                                            <option value="Bulgaria"> Bulgaria </option>
+                                            <option value="Burkina Faso"> Burkina Faso </option>
+                                            <option value="Burundi"> Burundi </option>
+                                            <option value="Cambodia"> Cambodia </option>
+                                            <option value="Cameroon"> Cameroon </option>
+                                            <option value="Canada"> Canada </option>
+                                            <option value="Cape Verde"> Cape Verde </option>
+                                            <option value="Cayman Islands"> Cayman Islands </option>
+                                            <option value="Central African Republic"> Central African Republic </option>
+                                            <option value="Chad"> Chad </option>
+                                            <option value="Chile"> Chile </option>
+                                            <option value="China"> China </option>
+                                            <option value="Christmas Island"> Christmas Island </option>
+                                            <option value="Cocos (Keeling) Islands"> Cocos (Keeling) Islands </option>
+                                            <option value="Colombia"> Colombia </option>
+                                            <option value="Comoros"> Comoros </option>
+                                            <option value="Congo"> Congo </option>
+                                            <option value="Cook Islands"> Cook Islands </option>
+                                            <option value="Costa Rica"> Costa Rica </option>
+                                            <option value="Cote d&#x27;Ivoire"> Cote d&#x27;Ivoire </option>
+                                            <option value="Croatia"> Croatia </option>
+                                            <option value="Cuba"> Cuba </option>
+                                            <option value="Cyprus"> Cyprus </option>
+                                            <option value="Czech Republic"> Czech Republic </option>
+                                            <option value="Democratic Republic of the Congo"> Democratic Republic of the Congo </option>
+                                            <option value="Denmark"> Denmark </option>
+                                            <option value="Djibouti"> Djibouti </option>
+                                            <option value="Dominica"> Dominica </option>
+                                            <option value="Dominican Republic"> Dominican Republic </option>
+                                            <option value="Ecuador"> Ecuador </option>
+                                            <option value="Egypt"> Egypt </option>
+                                            <option value="El Salvador"> El Salvador </option>
+                                            <option value="Equatorial Guinea"> Equatorial Guinea </option>
+                                            <option value="Eritrea"> Eritrea </option>
+                                            <option value="Estonia"> Estonia </option>
+                                            <option value="Ethiopia"> Ethiopia </option>
+                                            <option value="Falkland Islands"> Falkland Islands </option>
+                                            <option value="Faroe Islands"> Faroe Islands </option>
+                                            <option value="Fiji"> Fiji </option>
+                                            <option value="Finland"> Finland </option>
+                                            <option value="France"> France </option>
+                                            <option value="French Polynesia"> French Polynesia </option>
+                                            <option value="Gabon"> Gabon </option>
+                                            <option value="The Gambia"> The Gambia </option>
+                                            <option value="Georgia"> Georgia </option>
+                                            <option value="Germany"> Germany </option>
+                                            <option value="Ghana"> Ghana </option>
+                                            <option value="Gibraltar"> Gibraltar </option>
+                                            <option value="Greece"> Greece </option>
+                                            <option value="Greenland"> Greenland </option>
+                                            <option value="Grenada"> Grenada </option>
+                                            <option value="Guadeloupe"> Guadeloupe </option>
+                                            <option value="Guam"> Guam </option>
+                                            <option value="Guatemala"> Guatemala </option>
+                                            <option value="Guernsey"> Guernsey </option>
+                                            <option value="Guinea"> Guinea </option>
+                                            <option value="Guinea-Bissau"> Guinea-Bissau </option>
+                                            <option value="Guyana"> Guyana </option>
+                                            <option value="Haiti"> Haiti </option>
+                                            <option value="Honduras"> Honduras </option>
+                                            <option value="Hong Kong"> Hong Kong </option>
+                                            <option value="Hungary"> Hungary </option>
+                                            <option value="Iceland"> Iceland </option>
+                                            <option value="India"> India </option>
+                                            <option value="Indonesia"> Indonesia </option>
+                                            <option value="Iran"> Iran </option>
+                                            <option value="Iraq"> Iraq </option>
+                                            <option value="Ireland"> Ireland </option>
+                                            <option value="Israel"> Israel </option>
+                                            <option value="Italy"> Italy </option>
+                                            <option value="Jamaica"> Jamaica </option>
+                                            <option value="Japan"> Japan </option>
+                                            <option value="Jersey"> Jersey </option>
+                                            <option value="Jordan"> Jordan </option>
+                                            <option value="Kazakhstan"> Kazakhstan </option>
+                                            <option value="Kenya"> Kenya </option>
+                                            <option value="Kiribati"> Kiribati </option>
+                                            <option value="North Korea"> North Korea </option>
+                                            <option value="South Korea"> South Korea </option>
+                                            <option value="Kosovo"> Kosovo </option>
+                                            <option value="Kuwait"> Kuwait </option>
+                                            <option value="Kyrgyzstan"> Kyrgyzstan </option>
+                                            <option value="Laos"> Laos </option>
+                                            <option value="Latvia"> Latvia </option>
+                                            <option value="Lebanon"> Lebanon </option>
+                                            <option value="Lesotho"> Lesotho </option>
+                                            <option value="Liberia"> Liberia </option>
+                                            <option value="Libya"> Libya </option>
+                                            <option value="Liechtenstein"> Liechtenstein </option>
+                                            <option value="Lithuania"> Lithuania </option>
+                                            <option value="Luxembourg"> Luxembourg </option>
+                                            <option value="Macau"> Macau </option>
+                                            <option value="Macedonia"> Macedonia </option>
+                                            <option value="Madagascar"> Madagascar </option>
+                                            <option value="Malawi"> Malawi </option>
+                                            <option value="Malaysia"> Malaysia </option>
+                                            <option value="Maldives"> Maldives </option>
+                                            <option value="Mali"> Mali </option>
+                                            <option value="Malta"> Malta </option>
+                                            <option value="Marshall Islands"> Marshall Islands </option>
+                                            <option value="Martinique"> Martinique </option>
+                                            <option value="Mauritania"> Mauritania </option>
+                                            <option value="Mauritius"> Mauritius </option>
+                                            <option value="Mayotte"> Mayotte </option>
+                                            <option value="Mexico"> Mexico </option>
+                                            <option value="Micronesia"> Micronesia </option>
+                                            <option value="Moldova"> Moldova </option>
+                                            <option value="Monaco"> Monaco </option>
+                                            <option value="Mongolia"> Mongolia </option>
+                                            <option value="Montenegro"> Montenegro </option>
+                                            <option value="Montserrat"> Montserrat </option>
+                                            <option value="Morocco"> Morocco </option>
+                                            <option value="Mozambique"> Mozambique </option>
+                                            <option value="Myanmar"> Myanmar </option>
+                                            <option value="Nagorno-Karabakh"> Nagorno-Karabakh </option>
+                                            <option value="Namibia"> Namibia </option>
+                                            <option value="Nauru"> Nauru </option>
+                                            <option value="Nepal"> Nepal </option>
+                                            <option value="Netherlands"> Netherlands </option>
+                                            <option value="Netherlands Antilles"> Netherlands Antilles </option>
+                                            <option value="New Caledonia"> New Caledonia </option>
+                                            <option value="New Zealand"> New Zealand </option>
+                                            <option value="Nicaragua"> Nicaragua </option>
+                                            <option value="Niger"> Niger </option>
+                                            <option value="Nigeria"> Nigeria </option>
+                                            <option value="Niue"> Niue </option>
+                                            <option value="Norfolk Island"> Norfolk Island </option>
+                                            <option value="Turkish Republic of Northern Cyprus"> Turkish Republic of Northern Cyprus </option>
+                                            <option value="Northern Mariana"> Northern Mariana </option>
+                                            <option value="Norway"> Norway </option>
+                                            <option value="Oman"> Oman </option>
+                                            <option value="Pakistan"> Pakistan </option>
+                                            <option value="Palau"> Palau </option>
+                                            <option value="Palestine"> Palestine </option>
+                                            <option value="Panama"> Panama </option>
+                                            <option value="Papua New Guinea"> Papua New Guinea </option>
+                                            <option value="Paraguay"> Paraguay </option>
+                                            <option value="Peru"> Peru </option>
+                                            <option value="Philippines"> Philippines </option>
+                                            <option value="Pitcairn Islands"> Pitcairn Islands </option>
+                                            <option value="Poland"> Poland </option>
+                                            <option value="Portugal"> Portugal </option>
+                                            <option value="Puerto Rico"> Puerto Rico </option>
+                                            <option value="Qatar"> Qatar </option>
+                                            <option value="Republic of the Congo"> Republic of the Congo </option>
+                                            <option value="Romania"> Romania </option>
+                                            <option value="Russia"> Russia </option>
+                                            <option value="Rwanda"> Rwanda </option>
+                                            <option value="Saint Barthelemy"> Saint Barthelemy </option>
+                                            <option value="Saint Helena"> Saint Helena </option>
+                                            <option value="Saint Kitts and Nevis"> Saint Kitts and Nevis </option>
+                                            <option value="Saint Lucia"> Saint Lucia </option>
+                                            <option value="Saint Martin"> Saint Martin </option>
+                                            <option value="Saint Pierre and Miquelon"> Saint Pierre and Miquelon </option>
+                                            <option value="Saint Vincent and the Grenadines"> Saint Vincent and the Grenadines </option>
+                                            <option value="Samoa"> Samoa </option>
+                                            <option value="San Marino"> San Marino </option>
+                                            <option value="Sao Tome and Principe"> Sao Tome and Principe </option>
+                                            <option value="Saudi Arabia"> Saudi Arabia </option>
+                                            <option value="Senegal"> Senegal </option>
+                                            <option value="Serbia"> Serbia </option>
+                                            <option value="Seychelles"> Seychelles </option>
+                                            <option value="Sierra Leone"> Sierra Leone </option>
+                                            <option value="Singapore"> Singapore </option>
+                                            <option value="Slovakia"> Slovakia </option>
+                                            <option value="Slovenia"> Slovenia </option>
+                                            <option value="Solomon Islands"> Solomon Islands </option>
+                                            <option value="Somalia"> Somalia </option>
+                                            <option value="Somaliland"> Somaliland </option>
+                                            <option value="South Africa"> South Africa </option>
+                                            <option value="South Ossetia"> South Ossetia </option>
+                                            <option value="South Sudan"> South Sudan </option>
+                                            <option value="Spain"> Spain </option> <option value="Sri Lanka"> Sri Lanka </option>
+                                            <option value="Sudan"> Sudan </option> <option value="Suriname"> Suriname </option>
+                                            <option value="Svalbard"> Svalbard </option> <option value="eSwatini"> eSwatini </option>
+                                            <option value="Sweden"> Sweden </option> <option value="Switzerland"> Switzerland </option>
+                                            <option value="Syria"> Syria </option> <option value="Taiwan"> Taiwan </option>
+                                            <option value="Tajikistan"> Tajikistan </option> <option value="Tanzania"> Tanzania </option>
+                                            <option value="Thailand"> Thailand </option> <option value="Timor-Leste"> Timor-Leste </option>
+                                            <option value="Togo"> Togo </option> <option value="Tokelau"> Tokelau </option>
+                                            <option value="Tonga"> Tonga </option> <option value="Transnistria Pridnestrovie"> Transnistria Pridnestrovie </option>
+                                            <option value="Trinidad and Tobago"> Trinidad and Tobago </option>
+                                            <option value="Tristan da Cunha"> Tristan da Cunha </option> <option value="Tunisia"> Tunisia </option>
+                                            <option value="Turkey"> Turkey </option> <option value="Turkmenistan"> Turkmenistan </option>
+                                            <option value="Turks and Caicos Islands"> Turks and Caicos Islands </option>
+                                            <option value="Tuvalu"> Tuvalu </option>
+                                            <option value="Uganda"> Uganda </option> <option value="Ukraine"> Ukraine </option>
+                                            <option value="United Arab Emirates"> United Arab Emirates </option>
+                                            <option value="United Kingdom"> United Kingdom </option>
+                                            <option value="Uruguay"> Uruguay </option>
+                                            <option value="Uzbekistan"> Uzbekistan </option>
+                                            <option value="Vanuatu"> Vanuatu </option>
+                                            <option value="Vatican City"> Vatican City </option>
+                                            <option value="Venezuela"> Venezuela </option>
+                                            <option value="Vietnam"> Vietnam </option>
+                                            <option value="British Virgin Islands"> British Virgin Islands </option>
+                                            <option value="Isle of Man"> Isle of Man </option>
+                                            <option value="US Virgin Islands"> US Virgin Islands </option>
+                                            <option value="Wallis and Futuna"> Wallis and Futuna </option>
+                                            <option value="Western Sahara"> Western Sahara </option>
+                                            <option value="Yemen"> Yemen </option>
+                                            <option value="Zambia"> Zambia </option>
+                                            <option value="Zimbabwe"> Zimbabwe </option>
+                                            <option value="other"> Other </option>
+                                        </select>
+                                          <label class="form-sub-label" for="input_67_country" id="sublabel_67_country" style="min-height:13px"> Country </label>
+                                      </span>
+                                  </td>
+                              </tr>
+                              </tbody>
+                              </table>
+                          </div>
+                        </li>
+                        <li class="form-line jf-required" data-type="control_phone" id="id_66"> 
+                            <label class="form-label form-label-top form-label-auto" id="label_66" for="input_66_full">
+                                Phone Number <span class="form-required"> * </span>
+                            </label>
+                            <div id="cid_66" class="form-input-wide jf-required">
+                                <span class="form-sub-label-container " style="vertical-align:top">
+                                    <input type="tel" id="input_66_full" name="q66_phoneNumber[full]" data-type="mask-number"
+                                           class="mask-phone-number form-textbox validate[required, Fill Mask]" autoComplete="off"
+                                           data-masked="true" value="" data-component="phone" aria-labelledby="label_66" required=""/>
+                                    <label class="form-sub-label" for="input_66_full" id="sublabel_66_masked" style="min-height:13px"> </label>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="form-line jf-required" data-type="control_dropdown" id="id_68"> 
+                            <label class="form-label form-label-top form-label-auto" id="label_68" for="input_68">
+                                Will you have a spouse or co-buyer? <span class="form-required"> * </span>
+                            </label>
+                            <div id="cid_68" class="form-input-wide jf-required">
+                                <select class="form-dropdown validate[required]" id="input_68" name="q68_willYou"
+                                        style="width:150px" data-component="dropdown" required="" aria-labelledby="label_68">
+                                    <option value=""></option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO"> NO</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="form-line always-hidden form-field-hidden" style="display:none" data-type="control_fullname" id="id_70"> 
+                            <label class="form-label form-label-top form-label-auto" id="label_70" for="first_70">Co Buyer's Name</label>
+                            <div id="cid_70" class="form-input-wide always-hidden">
+                                <div data-wrapper-react="true">
+                                    <span class="form-sub-label-container " style="vertical-align:top">
+                                        <input type="text" id="first_70" name="q70_coBuyers[first]" class="form-textbox"
+                                               size="10" value="" data-component="first" aria-labelledby="label_70 sublabel_70_first"/>
+                                        <label class="form-sub-label" for="first_70" id="sublabel_70_first" style="min-height:13px"> First Name </label>
+                                    </span>
+                                    <span class="form-sub-label-container " style="vertical-align:top">
+                                        <input type="text" id="last_70" name="q70_coBuyers[last]" class="form-textbox" size="15" value=""
+                                               data-component="last" aria-labelledby="label_70 sublabel_70_last"/>
+                                        <label class="form-sub-label" for="last_70" id="sublabel_70_last" style="min-height:13px"> Last Name </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="cid_51" class="form-input-wide" data-type="control_pagebreak">
+                            <div class="form-pagebreak" data-component="pagebreak">
+                                <div class="form-pagebreak-back-container">
+                                    <button id="form-pagebreak-back_51" type="button" class="form-pagebreak-back " data-component="pagebreak-back">Back</button>
+                                </div>
+                                <div class="form-pagebreak-next-container">
+                                  <button id="form-pagebreak-next_51" type="button" class="form-pagebreak-next " data-component="pagebreak-next">Next</button>
+                                </div>
+                                <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_51"></div>
+                          </div>
+                        </li>
+                    </ul>
+                </div> 
+                <script> JotForm.showJotFormPowered = "0"; </script> 
+                <input type="hidden" id="simple_spc" name="simple_spc" value="92905425386161-92905425386161"/> 
+              </form>
+          </div>
+        </div>
+
+        <!--
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading" id="apply">Apply Now!</h2>
+            <p class="lead">
+                I am a...<br/>
+                <select name="type">
+                  <option>Teacher / School Employee</option>
+                  <option>Nurse / Healthcare Employee</option>
+                  <option>Law Enforcement / Support Staff</option>
+                  <option>Firefighter / EMT / Support Staff</option>
+                  <option>Government Employee</option>
+                  <option>Military</option>
+                </select>
+                <br/>Time Frame<br/>
+                <select name="time">
+                  <option value="3 months">3 Months</option>
+                  <option value="6 months">6 Months</option>
+                  <option value="1 year">1 Year</option>
+                </select>
+                <br/>
+                <a class="btn btn-primary my-2" href="cheri_aumond_mclean_apply.html">Continue &raquo;</a>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="clipboard.svg" width="400px" height="400px">
+          </div>
+        </div>
+        -->
       </div>
-      <div class="col-md-5">
-        <img src="clipboard.svg" width="400px" height="400px">
-      </div>
-    </div>
-  </div>
-</main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="bootstrap.bundle.min.js"></script></body>
+    </main>
+
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--    <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+<!--    <script src="bootstrap.bundle.min.js"></script>-->
+    <script type="text/javascript" src="jotform-validation.js"></script>
+  </body>
+
 </html>
