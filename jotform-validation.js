@@ -3,6 +3,16 @@ pathname = pathname.substr(1, pathname.length);
 
 setTimeout(function(){ jQuery('.hidden-section').remove(); }, 500);
 
+jQuery(document).ready(function(){
+    jQuery('.my-2').click(function(e){
+        e.preventDefault();
+
+        jQuery('html, body').animate({
+            scrollTop: (jQuery('#jotform').offset().top + 50)
+        }, 1000);
+    });
+});
+
 function nextStep() {
     var form = jQuery('#92905425386161');
     var formArray = form.serializeArray();
